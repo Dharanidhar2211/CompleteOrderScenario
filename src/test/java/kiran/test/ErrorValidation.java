@@ -29,7 +29,7 @@ public class ErrorValidation extends BaseTest{
 
 		ProductCatlogPage productcatlog=loginpage.LoginDetails("dharanidhar220@gmail.com", "Ilovecricket@12a3");
 		String errormsg=loginpage.ErrorPopup();
-		Assert.assertEquals(errormsg, "Incorrect email or passworda.");
+		Assert.assertEquals(errormsg, "Incorrect email or password.");
 	}
 	@Test
 	public void OrderErrorTest() throws InterruptedException

@@ -26,6 +26,7 @@ public class SubmitOrder extends BaseTest{
 	@Test(groups = "PurchaseOrder",dataProvider = "GetData")
 	public void SubmitOrder(HashMap<String, String> input) throws InterruptedException
 	{
+		//Dharanidhar
  
 		ProductCatlogPage productcatlog=loginpage.LoginDetails(input.get("email"), input.get("pass"));
 		List<WebElement> products=productcatlog.GetProducts();
