@@ -26,7 +26,7 @@ public class ErrorValidation extends BaseTest{
 	@Test(retryAnalyzer = ReTry.class)
 	public void ErrorMSGTest() throws InterruptedException
 	{
-		//Kiran
+		
 		ProductCatlogPage productcatlog=loginpage.LoginDetails("dharanidhar220@gmail.com", "Ilovecricket@12a3");
 		String errormsg=loginpage.ErrorPopup();
 		Assert.assertEquals(errormsg, "Incorrect email or password.");
